@@ -1,0 +1,64 @@
+npmschema: spec-driven
+
+context: |
+  Graco Construction Group — corporate/portfolio website
+  Miami-based construction & design firm (residential, commercial, Design & Build, renovation, concrete restoration, waterproofing)
+
+  ## Tech Stack
+  - Framework: Nuxt 4 (^4.2.2) — SSR/SSG
+  - Language: TypeScript
+  - UI: Vue 3 (^3.5.26) + vue-router (^4.6.4)
+  - CSS: Tailwind CSS v3 (via @nuxtjs/tailwindcss ^6.14.0)
+  - Fonts: Inter (headings), Manrope (body), Montserrat (decorative) via Google Fonts CDN
+  - Icons: Font Awesome 6.4.0 (CDN)
+  - Package manager: npm
+
+  ## Code Conventions
+  - Components: Vue 3 `<script setup lang="ts">`, Composition API, PascalCase filenames
+  - Styles: Tailwind utility classes preferred; custom CSS only in `assets/css/global.css`
+  - Dark mode: `class`-based strategy — no `dark:` prefix (default is dark)
+  - State: `ref`/`reactive` local state; no Pinia or global store
+  - Data: Static JSON loaded via composables in `app/hooks/`
+  - Images: stored in `public/`, use native `loading="lazy"` below the fold
+
+  ## Design Tokens
+  - Primary: #FF9F0A (orange) | Secondary: #0A84FF (blue) | Accent: #30D158 (green)
+  - Grays: gray-1 (#8E8E93) through gray-6 (#1C1C1E)
+  - Backgrounds: primary (#000), secondary (#1C1C1E), tertiary (#2C2C2E)
+  - Shadows: shadow-3d, shadow-button-primary, shadow-button-secondary
+  - Animations: animate-fadeInUp, animate-scrollFilm1/2/3
+  - Border radius: rounded-sm (12px), rounded-md (18px), rounded-lg (24px), rounded-xl (30px)
+  - Spacing: 4px base (space-1 = 4px)
+
+  ## Project Structure
+  app/ — app directory convention (no pages/ yet)
+  app/components/ — organized by feature (header/, hero/, sections/)
+  app/hooks/ — composables (useProjects, useCategories)
+  assets/ — CSS, static JSON (projects.json, categories.json)
+  public/ — images, videos, favicon
+
+  ## Current State
+  Static SPA, dark theme. Data from JSON in assets/. No backend, no API, no auth.
+  Long-term vision: multi-page platform with team roles, project management, QuickBooks integration.
+
+  ## Priority
+  Landing page first (home, about us, services, contact) — SEO/GEO optimized.
+  Other sections (Teams, project pages, i18n) come after.
+
+  ## Accessibility
+  Semantic HTML, alt text on images, focus management for modals/menus, sufficient contrast.
+
+rules:
+  proposal:
+    - Include a clear "Scope" and "Non-goals" section
+    - Reference specific design tokens (colors, fonts, shadows) when suggesting UI changes
+    - Always note dark mode implications
+    - Specify whether a change affects current SPA or future multi-page architecture
+  tasks:
+    - Break tasks into max 2-hour chunks
+    - Include verification steps (typecheck, build, visual check)
+    - Reference specific files with relative paths from project root
+  spec:
+    - List which components are affected (file paths)
+    - Include data flow description (JSON → composable → component)
+    - Mention mobile breakpoint considerations (850px nav, 1024px layout)

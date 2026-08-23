@@ -1,0 +1,301 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Pastoral Office Suite",
+      "serviceId": "general-commercial",
+      "includesPreConstruction": false,
+      "location": "Miami, FL",
+      "year": 2025,
+      "description": "Complete office suite renovation with modern finishes and professional workspace design.",
+      "coverImage": "/Final Pics/Commercial Projects/General Commercial/250815.1 Pastoral Office Suite.jpg",
+      "status": "completed"
+    },
+    {
+      "id": 2,
+      "name": "New 40Ton Roof Top Unit",
+      "serviceId": "general-commercial",
+      "includesPreConstruction": false,
+      "location": "Miami, FL",
+      "year": 2024,
+      "description": "Installation of new 40-ton rooftop HVAC unit with structural reinforcement and mechanical upgrades.",
+      "coverImage": "/Final Pics/Commercial Projects/General Commercial/240927.1 New 40Ton Roof Top Unit.jpeg",
+      "status": "completed"
+    },
+    {
+      "id": 3,
+      "name": "Demolition & General Renovation Cooling Tower",
+      "serviceId": "general-commercial",
+      "includesPreConstruction": false,
+      "location": "Miami, FL",
+      "year": 2023,
+      "description": "Cooling tower demolition and general renovation including mechanical systems upgrade.",
+      "coverImage": "/Final Pics/Commercial Projects/General Commercial/231119.1 Demolition & General Renovation Cooling Tower.JPG",
+      "status": "completed"
+    },
+    {
+      "id": 4,
+      "name": "MDC Cultural Affairs",
+      "serviceId": "general-commercial",
+      "includesPreConstruction": false,
+      "location": "Miami, FL",
+      "year": 2023,
+      "description": "Cultural affairs facility renovation and upgrades for Miami-Dade County.",
+      "coverImage": "/Final Pics/Commercial Projects/General Commercial/5-MDC Cultural Affairs.1.jpeg",
+      "status": "completed"
+    },
+    {
+      "id": 5,
+      "name": "White Box Commercial Buildout",
+      "serviceId": "general-commercial",
+      "includesPreConstruction": false,
+      "location": "4202 NW 2 Ave, Miami, FL",
+      "year": 2022,
+      "description": "White box commercial buildout for flexible tenant configuration.",
+      "coverImage": "/Final Pics/Commercial Projects/General Commercial/220316 4202 NW 2 Ave White Box.jpg",
+      "status": "completed"
+    },
+    {
+      "id": 6,
+      "name": "Daikin USA S09 Expansion",
+      "serviceId": "general-commercial",
+      "includesPreConstruction": false,
+      "location": "Miami, FL",
+      "year": 2022,
+      "description": "S09 facility expansion project for Daikin USA with warehouse and office areas.",
+      "coverImage": "/Final Pics/Commercial Projects/General Commercial/220309 Daikin USA S09 Expansion.1.jpg",
+      "status": "completed"
+    },
+    {
+      "id": 7,
+      "name": "Engineer Office Build-Out",
+      "serviceId": "general-commercial",
+      "includesPreConstruction": false,
+      "location": "Miami, FL",
+      "year": 2019,
+      "description": "New engineering office build-out with technical workspace and equipment areas.",
+      "coverImage": "/Final Pics/Commercial Projects/General Commercial/190706.1 New Engineer Office.jpeg",
+      "status": "completed"
+    },
+    {
+      "id": 8,
+      "name": "Warehouse ASU Expansion",
+      "serviceId": "general-commercial",
+      "includesPreConstruction": false,
+      "location": "Miami, FL",
+      "year": 2019,
+      "description": "Warehouse expansion and renovation for ASU facilities.",
+      "coverImage": "/Final Pics/Commercial Projects/General Commercial/190118 New Wharehouse ASU.1.JPG",
+      "status": "completed"
+    },
+    {
+      "id": 9,
+      "name": "Larkin Palm Spring Ultrasound Unit",
+      "serviceId": "medical-facilities",
+      "includesPreConstruction": false,
+      "location": "Miami, FL",
+      "year": 2025,
+      "description": "Medical facility build-out for ultrasound diagnostic unit at Larkin Palm Spring.",
+      "coverImage": "/Final Pics/Commercial Projects/Medical Facilities/250818 Larkin Palm Spring Ultrasound Unit.1.jpg",
+      "status": "completed"
+    },
+    {
+      "id": 10,
+      "name": "Complete Pharmacy and Medical Solutions",
+      "serviceId": "medical-facilities",
+      "includesPreConstruction": false,
+      "location": "Miami, FL",
+      "year": 2019,
+      "description": "Full pharmacy and medical solutions facility with clinical areas and pharmaceutical storage.",
+      "coverImage": "/Final Pics/Commercial Projects/Medical Facilities/190705 COMPLETE PHARMACY AND MEDICAL SOLUTIONS.1.JPG",
+      "status": "completed"
+    },
+    {
+      "id": 11,
+      "name": "Larkin Hospital OR Restoration",
+      "serviceId": "concrete-restoration",
+      "includesPreConstruction": false,
+      "location": "Miami, FL",
+      "year": 2023,
+      "description": "Concrete restoration and structural repairs at Larkin Hospital operating room level.",
+      "coverImage": "/Final Pics/Commercial Projects/Concrete Restoration & Waterproofing/230822.1 Larkin Hospital. Concrete Restoration at the OR.jpg",
+      "status": "completed"
+    },
+    {
+      "id": 12,
+      "name": "Concrete Restoration - SW 70 St Building A",
+      "serviceId": "concrete-restoration",
+      "includesPreConstruction": false,
+      "location": "5996 SW 70 St, Miami, FL",
+      "year": 2022,
+      "description": "Comprehensive concrete restoration including spalling repairs and waterproofing.",
+      "coverImage": "/Final Pics/Commercial Projects/Concrete Restoration & Waterproofing/220222.1 Concrete Restoration. 5996 SW 70 St.jpeg",
+      "status": "completed"
+    },
+    {
+      "id": 13,
+      "name": "Concrete Restoration - SW 70 St Building B",
+      "serviceId": "concrete-restoration",
+      "includesPreConstruction": false,
+      "location": "6140 SW 70 St, Miami, FL",
+      "year": 2022,
+      "description": "Structural concrete restoration and envelope repairs.",
+      "coverImage": "/Final Pics/Commercial Projects/Concrete Restoration & Waterproofing/220221.1 Concrete Restoration. 6140 SW 70 St.jpeg",
+      "status": "completed"
+    },
+    {
+      "id": 14,
+      "name": "Biscayne Boulevard Concrete Restoration",
+      "serviceId": "concrete-restoration",
+      "includesPreConstruction": false,
+      "location": "8000 Biscayne Blvd, Miami, FL",
+      "year": 2021,
+      "description": "Concrete restoration and waterproofing for commercial building.",
+      "coverImage": "/Final Pics/Commercial Projects/Concrete Restoration & Waterproofing/210718.1 Concrete Restoration. 8000 Biscayne Blvd.jpg",
+      "status": "completed"
+    },
+    {
+      "id": 15,
+      "name": "Church Structural Restoration",
+      "serviceId": "concrete-restoration",
+      "includesPreConstruction": false,
+      "location": "349 SW 12 ST, Miami, FL",
+      "year": 2019,
+      "description": "Structural restoration and concrete repairs for historic church building.",
+      "coverImage": "/Final Pics/Commercial Projects/Concrete Restoration & Waterproofing/191129.1 Church Project. 349 SW 12 ST Miami.jpg",
+      "status": "completed"
+    },
+    {
+      "id": 16,
+      "name": "Residential Renovation Project 1",
+      "serviceId": "renovation-projects",
+      "includesPreConstruction": false,
+      "location": "Miami, FL",
+      "year": 2019,
+      "description": "Complete residential renovation with modern finishes and updated systems.",
+      "coverImage": "/Final Pics/Residential Project/General Renovation/190519.1 1570 Biarritz Dr.jpeg",
+      "status": "completed"
+    },
+    {
+      "id": 17,
+      "name": "Residential Renovation Project 2",
+      "serviceId": "renovation-projects",
+      "includesPreConstruction": false,
+      "location": "Brickell, Miami, FL",
+      "year": 2019,
+      "description": "Luxury condo unit renovation at Mint Brickell with high-end finishes.",
+      "coverImage": "/Final Pics/Residential Project/General Renovation/190511.1 1711 Mint Brickell Unit Ailed Padilla.jfif",
+      "status": "completed"
+    },
+    {
+      "id": 18,
+      "name": "Residential Renovation Project 3",
+      "serviceId": "renovation-projects",
+      "includesPreConstruction": false,
+      "location": "Doral, FL",
+      "year": 2019,
+      "description": "Modern condo renovation with contemporary design elements.",
+      "coverImage": "/Final Pics/Residential Project/General Renovation/190116.1 Modern Doral 60B. Lisbet Cols.jfif",
+      "status": "completed"
+    },
+    {
+      "id": 19,
+      "name": "Residential Renovation Project 4",
+      "serviceId": "renovation-projects",
+      "includesPreConstruction": false,
+      "location": "Miami, FL",
+      "year": 2019,
+      "description": "Comprehensive residential renovation with complete interior upgrades.",
+      "coverImage": "/Final Pics/Residential Project/General Renovation/190115.1 Tatina&Oswaldo Ledezma Residence.jpg",
+      "status": "completed"
+    },
+    {
+      "id": 20,
+      "name": "Bay Shore Drive Renovation",
+      "serviceId": "renovation-projects",
+      "includesPreConstruction": false,
+      "location": "2459 S Bay Shore Dr, Miami, FL",
+      "year": 2018,
+      "description": "Waterfront residential renovation.",
+      "coverImage": "/Final Pics/Residential Project/General Renovation/181217.1 2459 S Bay Shore Dr.jpg",
+      "status": "completed"
+    },
+    {
+      "id": 21,
+      "name": "Residential Unit Renovation Project 5",
+      "serviceId": "renovation-projects",
+      "includesPreConstruction": false,
+      "location": "Miami, FL",
+      "year": 2018,
+      "description": "Electrical and soffit renovation for residential unit.",
+      "coverImage": "/Final Pics/Residential Project/General Renovation/180423.1 Hide Unit 8 Electrical And Soffit.JPG",
+      "status": "completed"
+    },
+    {
+      "id": 22,
+      "name": "Residential Renovation Project 6",
+      "serviceId": "renovation-projects",
+      "includesPreConstruction": false,
+      "location": "Miami, FL",
+      "year": 2017,
+      "description": "Complete residential renovation project.",
+      "coverImage": "/Final Pics/Residential Project/General Renovation/171007 Ivette Mendez.jpg",
+      "status": "completed"
+    },
+    {
+      "id": 23,
+      "name": "Residential Addition Project 7",
+      "serviceId": "renovation-projects",
+      "includesPreConstruction": false,
+      "location": "Miami, FL",
+      "year": 2017,
+      "description": "Residential addition and renovation with expanded living space.",
+      "coverImage": "/Final Pics/Residential Project/General Renovation/170517.1 Milton Cardoso Residence New Addition.jpg",
+      "status": "completed"
+    },
+    {
+      "id": 24,
+      "name": "Residential New Construction Project 1",
+      "serviceId": "new-construction",
+      "includesPreConstruction": false,
+      "location": "Miami, FL",
+      "year": 2024,
+      "description": "New fence and gazebo construction with landscaping.",
+      "coverImage": "/Final Pics/Residential Project/New Construction/240120.1 New Fence & Gazebo. 13321 SW 2nd St.jpeg",
+      "status": "completed"
+    },
+    {
+      "id": 25,
+      "name": "Residential New Construction Project 2",
+      "serviceId": "new-construction",
+      "includesPreConstruction": false,
+      "location": "Miami, FL",
+      "year": 2023,
+      "description": "Back terrace construction with outdoor living space.",
+      "coverImage": "/Final Pics/Residential Project/New Construction/230307.1 20517 SW 2nd St Back Terrace.jpg",
+      "status": "completed"
+    },
+    {
+      "id": 26,
+      "name": "Residential New Construction Project 3",
+      "serviceId": "new-construction",
+      "includesPreConstruction": false,
+      "location": "Miami, FL",
+      "year": 2018,
+      "description": "New residential construction project.",
+      "coverImage": "/Final Pics/Residential Project/New Construction/180922.1 Graciella & Alexander Residence.jpeg",
+      "status": "completed"
+    },
+    {
+      "id": 27,
+      "name": "Residential New Construction Project 4",
+      "serviceId": "new-construction",
+      "includesPreConstruction": false,
+      "location": "Miami, FL",
+      "year": 2018,
+      "description": "Complete residential construction with custom finishes.",
+      "coverImage": "/Final Pics/Residential Project/New Construction/180507.1 General Renovation. Boria Residence.jpg",
+      "status": "completed"
+    }
+  ]
+}

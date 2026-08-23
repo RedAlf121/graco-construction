@@ -1,0 +1,73 @@
+{
+  "services": [
+    {
+      "id": "preconstruction-management",
+      "slug": "preconstruction-management",
+      "name": "Preconstruction Management",
+      "description": "Residential and Commercial Project Manager from the Design stage. Coordinate with design teams and clients to secure a feasible project with an ethical solution based on client demands.",
+      "icon": "fa-pen-ruler",
+      "children": []
+    },
+    {
+      "id": "construction-management",
+      "slug": "construction-management",
+      "name": "Construction Management",
+      "description": "General Contractor Services for Residential and Commercial Projects",
+      "icon": "fa-hard-hat",
+      "children": [
+        {
+          "id": "residential",
+          "slug": "residential",
+          "name": "Residential",
+          "icon": "fa-house-chimney",
+          "children": [
+            {
+              "id": "new-construction",
+              "slug": "new-construction",
+              "name": "New Construction",
+              "icon": "fa-hammer",
+              "category": "residential"
+            },
+            {
+              "id": "renovation-projects",
+              "slug": "renovation-projects",
+              "name": "Renovation Projects",
+              "icon": "fa-rotate",
+              "category": "residential"
+            }
+          ]
+        },
+        {
+          "id": "commercial",
+          "slug": "commercial",
+          "name": "Commercial",
+          "icon": "fa-building",
+          "children": [
+            {
+              "id": "general-commercial",
+              "slug": "general-commercial",
+              "name": "General Commercial",
+              "icon": "fa-briefcase",
+              "category": "commercial"
+            },
+            {
+              "id": "medical-facilities",
+              "slug": "medical-facilities",
+              "name": "Medical Facilities",
+              "icon": "fa-hospital",
+              "category": "commercial",
+              "description": "Specialized healthcare construction including clinics, medical offices, and outpatient facilities with compliance to medical building codes."
+            },
+            {
+              "id": "concrete-restoration",
+              "slug": "concrete-restoration",
+              "name": "Concrete Restoration & Waterproofing",
+              "icon": "fa-shield",
+              "category": "commercial"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
