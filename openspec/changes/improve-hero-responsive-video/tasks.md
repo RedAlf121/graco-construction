@@ -61,3 +61,24 @@
 - Fluid logo: size steps -> w-[clamp(11rem,30vw,20rem)] (187px mobile vs 128 before; 340px desktop); short-screen override !w-16
 - Short-screen (max-height:500px) column tightened: gap-2, pb-2, pt header+0.25rem, title leading-none — landscape 800x360 fully in view (btn bottom 340.6 < 360), logo clear of header (136.6 > 121)
 - Re-verified: 8-viewport matrix (1 video, adaptive sources, aligned, stacked, inView, headerClear, noHScroll), saveData/reduced-motion poster-only, Fast 3G poster-first
+
+## Round 3 — user review fixes (2026-11-25, same branch)
+
+Issue reported: still looked dark and the logo looked tiny "at every resolution" while resizing.
+Root causes found and fixed:
+
+- Dark video: the knockout multiplies the media by its gray value. gray-2 (#636366) = 39% brightness.
+  Now gray-1 (#8E8E93, ~56%) plus a media filter brightness(1.2) saturate(1.1) => background at ~67%
+  of the original video (72% brighter than before) while the letters keep the video at full brightness.
+- Logo collapse: the short-screen rule (max-height:500px) set a fixed !w-[3.8rem] (64px), so ANY window
+  shorter than 500px showed a tiny logo (desktop windows included). Replaced with a proportional
+  min(28.5vw,30vh): 108px at 800x360 (was 64), 135px at 1440x450. Short-screen title is also
+  height-aware (clamp(1.75rem,13vh,6rem)) so landscape 800x360 fits fully (button bottom 356 < 360).
+- Legibility: "BUILT TO" fell over dark buildings and vanished (the letters ARE the video). The
+  alignment twin in the content layer is now a white/15 veil (pointer-events-none, aria-hidden),
+  so the letters read everywhere while keeping ~85% of the video inside them.
+- Verified in Firefox (the user's browser) at 390x844, 800x360, 1440x450, 1440x900 + Chromium CDP
+  matrix on the production build (8 viewports, brightness rgb(142,142,147), logo 177.6/323/108,
+  headerClear, aligned, stacked, inView, no HScroll, saveData/reduced-motion poster-only, Fast3G).
+- Note: running `npm run build` while `nuxt dev` is up overwrites .nuxt and can desync an open tab;
+  a dev-server restart + hard reload was needed for the user's browser to pick the changes up.

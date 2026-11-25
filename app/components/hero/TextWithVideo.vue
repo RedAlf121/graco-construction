@@ -3,7 +3,7 @@
 	     `isolate` keeps the knockout blend contained; fallback color avoids a black void. -->
 	<div
 		class="absolute inset-0 isolate overflow-hidden bg-background-secondary bg-cover bg-center"
-		:style="{ backgroundImage: `url(${poster})` }"
+		:style="{ backgroundImage: `url(${poster})`, filter: 'brightness(1.2) saturate(1.1)' }"
 	>
 		<ClientOnly>
 			<BackgroundVideo :poster="poster" />
