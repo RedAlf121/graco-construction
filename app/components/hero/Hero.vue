@@ -37,7 +37,7 @@ const titleClasses =
 const logoProps = {
   url: '/logo graco.png',
   alt: 'Graco logo',
-  iconClass: 'w-[clamp(11rem,30vw,20rem)] drop-shadow-2xl [@media(max-height:500px)]:!w-16',
+  iconClass: 'w-[clamp(10.45rem,28.5vw,19rem)] drop-shadow-2xl [@media(max-height:500px)]:!w-[3.8rem]',
 }
 
 const buttonProps = {
