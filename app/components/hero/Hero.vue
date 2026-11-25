@@ -2,7 +2,7 @@
   <section id="home" class="relative w-full min-h-screen min-h-svh text-white">
     <!-- Media layer: single video + poster; knockout title blends inside -->
     <TextWithVideo :poster="poster">
-      <div :class="columnClasses" class="hero-knockout absolute inset-0 bg-background-tertiary mix-blend-multiply">
+      <div :class="columnClasses" class="hero-knockout absolute inset-0 bg-gray-2 mix-blend-multiply">
         <Logo v-bind="logoProps" class="invisible" aria-hidden="true" />
         <h1 :class="titleClasses">{{ title }}</h1>
         <HeroButton v-bind="buttonProps" class="invisible" aria-hidden="true" />
@@ -29,15 +29,15 @@ const poster = '/hero-miami-poster.webp'
 // Shared by both layers so the knockout title aligns exactly with the
 // invisible title twin in the content column (visibility:hidden keeps metrics).
 const columnClasses =
-  'flex min-h-screen min-h-svh flex-col items-center justify-center gap-6 px-4 pb-16 pt-[calc(var(--header-height)+1rem)] [@media(max-height:500px)]:gap-3 [@media(max-height:500px)]:pb-6 [@media(max-height:500px)]:pt-[calc(var(--header-height)+0.5rem)]'
+  'flex min-h-screen min-h-svh flex-col items-center justify-center gap-6 px-4 pb-16 pt-[calc(var(--header-height)+1rem)] [@media(max-height:500px)]:gap-2 [@media(max-height:500px)]:pb-2 [@media(max-height:500px)]:pt-[calc(var(--header-height)+0.25rem)]'
 
 const titleClasses =
-  'text-center font-montserrat font-black tracking-tight text-white text-[clamp(2.5rem,8vw,6rem)]'
+  'text-center font-montserrat font-black tracking-tight text-white text-[clamp(2.5rem,8vw,6rem)] [@media(max-height:500px)]:leading-none'
 
 const logoProps = {
   url: '/logo graco.png',
   alt: 'Graco logo',
-  iconClass: 'size-32 md:size-48 lg:size-64 xl:size-80 drop-shadow-2xl [@media(max-height:500px)]:!size-24',
+  iconClass: 'w-[clamp(11rem,30vw,20rem)] drop-shadow-2xl [@media(max-height:500px)]:!w-16',
 }
 
 const buttonProps = {

@@ -53,3 +53,11 @@
 - npm run build + npm run generate pass (78 routes prerendered); static output served and all routes 200; /projects and /about visually unchanged
 - iOS Safari: MP4 H.264 source present (type-based selection); real-device check pending user
 - Observed pre-existing issue (out of scope): subpage titles sit under the mobile header (mt-24 < actual header height) — candidate for a future change
+
+## Round 2 — user review fixes (2026-11-25, same branch)
+
+- Video brightness: knockout layer bg-background-tertiary (#2C2C2E, ~17%) -> bg-gray-2 (#636366, ~39%); video clearly visible, letters still pop
+- Real header clearance: --header-height now measured from the live fixed header (ResizeObserver + resize + nextTick in app.vue, self-healing across the 850px v-if swap); hero pt and snap scroll-padding use the real height (162/137/121/112px observed) — logo no longer under navbar at any viewport
+- Fluid logo: size steps -> w-[clamp(11rem,30vw,20rem)] (187px mobile vs 128 before; 340px desktop); short-screen override !w-16
+- Short-screen (max-height:500px) column tightened: gap-2, pb-2, pt header+0.25rem, title leading-none — landscape 800x360 fully in view (btn bottom 340.6 < 360), logo clear of header (136.6 > 121)
+- Re-verified: 8-viewport matrix (1 video, adaptive sources, aligned, stacked, inView, headerClear, noHScroll), saveData/reduced-motion poster-only, Fast 3G poster-first
