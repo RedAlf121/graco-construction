@@ -1,7 +1,7 @@
 <template>
-  <NuxtLink :to="link.path" @click="handleClick" class="group relative text-[#EBEBF5] no-underline text-base 
-           font-extrabold px-6 py-5 rounded-none uppercase tracking-wider 
-           border border-transparent flex items-center gap-4 z-[1] overflow-hidden
+  <NuxtLink :to="link.path" @click="handleClick" class="group relative text-[#EBEBF5] no-underline text-sm
+           font-extrabold px-5 py-4 rounded-none uppercase tracking-wider
+           border border-transparent flex items-center gap-3 z-[1] overflow-hidden
            transition-all duration-350 ease-[cubic-bezier(0.4,0,0.2,1)]
            bg-white/5 border-white/10" :class="{
             'text-white bg-white/10 border-white/20': isActive

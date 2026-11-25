@@ -2,12 +2,12 @@
 /* ESTILOS COMUNES Y RESET */
 /* =========================================== */
 :root {
-  --header-height: 120px;
+  --header-height: 72px;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1100px) {
   :root {
-    --header-height: 60px;
+    --header-height: 56px;
   }
 }
 
@@ -15,6 +15,7 @@
 .snap-container {
   scroll-snap-type: y mandatory;
   height: 100vh;
+  height: 100dvh;
   overflow-y: scroll;
   scroll-padding-top: var(--header-height);
 }
@@ -29,6 +30,7 @@
   scroll-snap-align: end;
 }
 
+:root {
   --primary: #FF9F0A;
   --primary-dark: #D87A00;
   --primary-light: #FFB340;
@@ -975,5 +977,13 @@ h6 {
     max-width: 100%;
     margin: 0 auto;
     padding: 0 16px;
+  }
+}
+
+/* Hero knockout fallback: plain white title when blend modes are unsupported */
+@supports not (mix-blend-mode: multiply) {
+  .hero-knockout {
+    background: rgba(0, 0, 0, 0.6);
+    mix-blend-mode: normal;
   }
 }

@@ -1,10 +1,10 @@
 <template>
   <header class="bg-black/98 backdrop-blur-xl border-b border-white/10 
-                 px-4 py-3 flex justify-between items-center  -webkit-backdrop-blur-xl">
+                 px-[clamp(0.75rem,2vw,1.25rem)] py-[clamp(0.375rem,1vmin,0.625rem)] flex justify-between items-center -webkit-backdrop-blur-xl">
     
-    <div class="flex items-center gap-3 mt-4 mb-8 md:mt-0 md:mb-0">
-      <Logo :url="'/logo graco.png'" :alt="'Graco logo'" :icon-class="'size-16 md:size-24 drop-shadow-lg'" />
-      <h1 class="text-lg md:text-2xl font-bold tracking-tight text-white">
+    <div class="flex min-w-0 items-center gap-[clamp(0.5rem,1.5vw,0.75rem)]">
+      <Logo :url="'/logo graco.png'" :alt="'Graco logo'" :icon-class="'h-[clamp(2.25rem,7vmin,3rem)] w-[clamp(2.25rem,7vmin,3rem)] shrink-0 object-contain drop-shadow-lg'" />
+      <h1 class="max-w-[clamp(10rem,48vw,22rem)] leading-tight text-[clamp(0.75rem,2.2vw,1rem)] font-bold tracking-tight text-white">
         GRACO CONSTRUCTION GROUP, INC
       </h1>
     </div>

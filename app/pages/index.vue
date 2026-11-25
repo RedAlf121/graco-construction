@@ -1,7 +1,7 @@
 <template>
   <main class="snap-container bg-gradient-to-l from-background-secondary to-background-primary">
-    <section class="snap-section">
-      <Hero class="mt-24" />
+    <section class="snap-section flex flex-col">
+      <Hero class="flex-1" />
     </section>
     <section class="snap-section flex items-center justify-center">
       <ProjectsPreview class="text-white w-full" />

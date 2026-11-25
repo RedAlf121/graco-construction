@@ -27,7 +27,7 @@ const navLinks = [
 const isMobile = ref(false)
 const isMobileMenuOpen = ref(false)
 
-const MOBILE_BREAKPOINT = 850
+const MOBILE_BREAKPOINT = 1100
 
 const checkMobile = () => {
   isMobile.value = window.innerWidth < MOBILE_BREAKPOINT

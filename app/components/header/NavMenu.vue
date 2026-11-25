@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex w-fit h-fit justify-center items-center gap-0.5 bg-black/70 border-2 border-white/10 
+  <nav class="flex w-fit h-fit justify-center items-center gap-0.5 bg-black/70 border border-white/10
               shadow-[0_8px_32px_rgba(0,0,0,0.8)] [box-shadow:inset_0_1px_0_rgba(255,255,255,0.05)]
               rounded-none p-0.5 relative z-[1000]">
     
