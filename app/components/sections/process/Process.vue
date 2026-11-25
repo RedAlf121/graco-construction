@@ -7,9 +7,7 @@
       />
     </div>
 
-    <div class="relative mx-auto mt-8 lg:mt-12 max-w-5xl lg:pl-48">
-      <ProcessCrane :active="isVisible" />
-
+    <div class="relative mx-auto mt-8 lg:mt-12 max-w-5xl">
       <div class="flex flex-col items-center gap-px">
         <div
           v-for="(card, index) in buildingCards"
@@ -46,7 +44,6 @@
 <script setup lang="ts">
 import SectionHeader from '../SectionHeader.vue'
 import ProcessCard from './ProcessCard.vue'
-import ProcessCrane from './ProcessCrane.vue'
 import { useInView } from '~/hooks/useInView'
 
 interface CardProperties {

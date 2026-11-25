@@ -135,9 +135,6 @@ export default{
         'scrollFilm1': 'scrollFilm1 60s linear infinite',
         'scrollFilm2': 'scrollFilm2 70s linear infinite',
         'scrollFilm3': 'scrollFilm3 80s linear infinite',
-        'craneSwing': 'craneSwing 4s ease-in-out infinite',
-        'craneArmSwing': 'craneArmSwing 4s ease-in-out infinite',
-        'hookSwing': 'hookSwing 3s ease-in-out infinite',
         'buildingGrow': 'buildingGrow 1s cubic-bezier(0.4, 0, 0.2, 1) forwards',
       },
       
@@ -174,21 +171,6 @@ export default{
         pulse: {
           '0%, 100%': { transform: 'scale(1)' },
           '50%': { transform: 'scale(1.1)' },
-        },
-        craneSwing: {
-          '0%, 100%': { transform: 'rotate(0deg)' },
-          '25%': { transform: 'rotate(3deg)' },
-          '75%': { transform: 'rotate(-3deg)' },
-        },
-        craneArmSwing: {
-          '0%, 100%': { transform: 'translateX(-50%) rotate(0deg)' },
-          '25%': { transform: 'translateX(-50%) rotate(2deg)' },
-          '75%': { transform: 'translateX(-50%) rotate(-2deg)' },
-        },
-        hookSwing: {
-          '0%, 100%': { transform: 'translateX(0)' },
-          '25%': { transform: 'translateX(8px)' },
-          '75%': { transform: 'translateX(-8px)' },
         },
         buildingGrow: {
           '0%': { opacity: '0', transform: 'scaleY(0.8) translateY(40px)' },
