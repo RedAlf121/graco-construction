@@ -8,11 +8,11 @@
         />
       </div>
 
-      <div class="mx-auto mt-12 grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-2">
+      <div class="mx-auto mt-12 grid max-w-6xl grid-cols-1 gap-8 px-2 sm:px-0 md:grid-cols-2">
         <div
           v-for="(service, idx) in servicesTree"
           :key="service.id"
-          class="flex flex-col rounded-none border border-white/10 bg-background-tertiary p-8 transition-all duration-300 hover:scale-[1.02] hover:shadow-card-3d-hover hover:border-primary border-t-2 border-primary/30 shadow-card-3d"
+          class="flex flex-col rounded-none border border-white/10 bg-background-tertiary p-5 transition-all duration-300 hover:scale-[1.02] hover:shadow-card-3d-hover hover:border-primary border-t-2 border-primary/30 shadow-card-3d sm:p-8"
           :class="{
             'opacity-0': !isVisible,
             'animate-slideInLeft': isVisible && idx === 0,
@@ -20,11 +20,11 @@
           }"
         >
           <template v-if="service.children && service.children.length">
-            <div class="mb-6 flex items-center gap-4">
-              <div class="flex size-20 items-center justify-center rounded-none bg-primary/10 text-3xl text-primary">
+            <div class="mb-6 flex flex-col items-center gap-4 text-center lg:flex-row lg:text-left">
+              <div class="flex size-20 shrink-0 aspect-square items-center justify-center rounded-none bg-primary/10 p-4 text-3xl text-primary">
                 <i :class="'fas ' + service.icon"></i>
               </div>
-              <h3 class="text-4xl font-bold text-white">{{ service.name }}</h3>
+              <h3 class="w-full min-w-0 break-words text-[clamp(1rem,5vw,2.25rem)] font-bold text-white">{{ service.name }}</h3>
             </div>
             <p v-if="service.description" class="mb-6 text-xl leading-relaxed text-white/70">
               {{ service.description }}
@@ -50,11 +50,11 @@
             </div>
           </template>
           <template v-else>
-            <div class="flex items-center justify-center gap-4">
-              <div class="flex size-20 items-center justify-center rounded-none bg-primary/10 text-3xl text-primary">
+            <div class="flex flex-col items-center justify-center gap-4 text-center lg:flex-row">
+              <div class="flex size-20 shrink-0 aspect-square items-center justify-center rounded-none bg-primary/10 p-4 text-3xl text-primary">
                 <i :class="'fas ' + service.icon"></i>
               </div>
-              <h3 class="text-4xl font-bold text-white">{{ service.name }}</h3>
+              <h3 class="w-full min-w-0 break-words text-[clamp(1rem,5vw,2.25rem)] font-bold text-white">{{ service.name }}</h3>
             </div>
             <p v-if="service.description" class="flex-1 flex items-center justify-center text-center text-xl leading-relaxed text-white/70">
               {{ service.description }}
