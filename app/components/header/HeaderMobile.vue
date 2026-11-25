@@ -4,7 +4,7 @@
     
     <div class="flex min-w-0 items-center gap-[clamp(0.5rem,1.5vw,0.75rem)]">
       <Logo :url="'/logo graco.png'" :alt="'Graco logo'" :icon-class="'h-[clamp(2.25rem,7vmin,3rem)] w-[clamp(2.25rem,7vmin,3rem)] shrink-0 object-contain drop-shadow-lg'" />
-      <h1 class="max-w-[clamp(10rem,48vw,22rem)] leading-tight text-[clamp(0.75rem,2.2vw,1rem)] font-bold tracking-tight text-white">
+      <h1 class="max-w-[clamp(10rem,48vw,22rem)] leading-tight text-[clamp(0.875rem,2.6vw,1.125rem)] font-bold tracking-tight text-white">
         GRACO CONSTRUCTION GROUP, INC
       </h1>
     </div>
