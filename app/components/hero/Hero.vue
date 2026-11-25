@@ -1,5 +1,5 @@
 <template>
-  <section id="home" class="relative w-full min-h-screen min-h-svh text-white">
+  <section id="home" class="relative w-full min-h-screen min-h-svh [@media(max-width:1100px)]:min-h-[82svh] text-white">
     <!-- Media layer: single video + poster; knockout title blends inside -->
     <TextWithVideo :poster="poster">
       <div :class="columnClasses" class="hero-knockout absolute inset-0 bg-gray-1 mix-blend-multiply">
@@ -13,7 +13,7 @@
          veil so the knockout letters stay legible over dark parts of the video -->
     <div :class="columnClasses" class="relative z-10">
       <Logo v-bind="logoProps" />
-      <div :class="titleClasses" class="pointer-events-none select-none text-white/15" aria-hidden="true">{{ title }}</div>
+      <div :class="titleClasses" class="pointer-events-none select-none text-white/60 drop-shadow-[0_1px_8px_rgba(0,0,0,0.55)]" aria-hidden="true">{{ title }}</div>
       <HeroButton v-bind="buttonProps" />
     </div>
   </section>
@@ -30,15 +30,15 @@ const poster = '/hero-miami-poster.webp'
 // Shared by both layers so the knockout title aligns exactly with the
 // invisible title twin in the content column (visibility:hidden keeps metrics).
 const columnClasses =
-  'flex min-h-screen min-h-svh flex-col items-center justify-center gap-6 px-4 pb-16 pt-[calc(var(--header-height)+1rem)] [@media(max-height:500px)]:gap-2 [@media(max-height:500px)]:pb-2 [@media(max-height:500px)]:pt-[calc(var(--header-height)+0.25rem)]'
+  'grid min-h-screen min-h-svh [@media(max-width:1100px)]:min-h-[82svh] grid-rows-[auto_auto_auto] content-center items-center justify-items-center gap-[clamp(0.8125rem,3.25vmin,1.625rem)] px-4 pb-[clamp(2rem,8vmin,4rem)] pt-[calc(var(--header-height)+1rem)] [@media(max-height:500px)]:gap-2 [@media(max-height:500px)]:pb-2 [@media(max-height:500px)]:pt-[calc(var(--header-height)+0.25rem)]'
 
 const titleClasses =
-  'text-center font-montserrat font-black tracking-tight text-white text-[clamp(2.5rem,8vw,6rem)] [@media(max-height:500px)]:leading-none [@media(max-height:500px)]:[font-size:clamp(1.75rem,13vh,6rem)]'
+  'whitespace-nowrap text-center font-montserrat font-black tracking-tight text-white text-[clamp(1.25rem,7vw,5rem)] [@media(max-height:500px)]:leading-none [@media(max-height:500px)]:[font-size:clamp(1.25rem,8vh,3.5rem)]'
 
 const logoProps = {
-  url: '/logo graco.png',
+  url: '/logo-graco-cropped.png',
   alt: 'Graco logo',
-  iconClass: 'w-[clamp(10.45rem,28.5vw,19rem)] drop-shadow-2xl [@media(max-height:500px)]:!w-[min(28.5vw,30vh)]',
+  iconClass: 'w-[clamp(8rem,25vw,16rem)] drop-shadow-2xl [@media(max-height:500px)]:!w-[clamp(7.5rem,24vh,12rem)]',
 }
 
 const buttonProps = {

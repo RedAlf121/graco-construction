@@ -1,8 +1,8 @@
 <template>
-  <header>
-    <div class="flex items-center gap-3 mt-4 mb-8 md:mt-0 md:mb-0">
-      <Logo :url="'/logo graco.png'" :alt="'Graco logo'" :icon-class="'size-24'" />
-      <h1 class="text-base sm:text-lg md:text-xl lg:text-2xl font-bold tracking-tight text-white">
+  <header class="flex w-full items-center justify-between px-[clamp(1rem,3vw,3rem)]">
+    <div class="flex items-center gap-[clamp(0.5rem,1vmin,0.75rem)]">
+      <Logo :url="'/logo graco.png'" :alt="'Graco logo'" :icon-class="'h-[clamp(3.25rem,7vmin,4.25rem)] w-[clamp(3.25rem,7vmin,4.25rem)] object-contain'" />
+      <h1 class="text-[clamp(0.875rem,1.45vmin,1.125rem)] font-bold tracking-tight text-white leading-tight">
         <span class="block text-center">GRACO CONSTRUCTION</span>
         <span class="block ">GROUP INC</span>
       </h1>

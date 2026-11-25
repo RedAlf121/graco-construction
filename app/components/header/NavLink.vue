@@ -1,11 +1,11 @@
 <template>
   <NuxtLink :to="path" 
     class="group relative text-[#EBEBF5] no-underline 
-           text-xs lg:text-xs xl:text-sm font-extrabold 
-           px-5 lg:px-5 xl:px-8 py-3.5 lg:py-3.5 xl:py-4 
+           text-[clamp(0.6875rem,1.15vmin,0.875rem)] font-extrabold
+           px-[clamp(0.75rem,1.25vw,1.5rem)] py-[clamp(0.625rem,1.5vmin,0.875rem)]
            rounded-none transition-all duration-350 ease-[cubic-bezier(0.4,0,0.2,1)] 
            flex items-center gap-2 lg:gap-2 xl:gap-3 
-           bg-white/[0.03] min-w-[120px] lg:min-w-[120px] xl:min-w-[140px] 
+           bg-white/[0.03] min-w-[clamp(5.75rem,9vw,8.75rem)]
            justify-center overflow-hidden border border-transparent 
            uppercase tracking-wider
            hover:text-white hover:bg-white/5 hover:border-white/10

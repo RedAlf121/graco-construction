@@ -28,7 +28,7 @@ interface NetworkInformation {
 	effectiveType?: string
 }
 
-const MOBILE_BREAKPOINT = 850
+const MOBILE_BREAKPOINT = 1100
 
 const isMobile = ref(false)
 // Start conservative: decide whether to load video only after checking

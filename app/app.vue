@@ -1,7 +1,7 @@
 <template>
   <Header
     ref="headerRef"
-    class="fixed top-0 z-[1000] w-full font-montserrat bg-background-secondary py-2 flex justify-between lg:justify-around items-center">
+    class="fixed top-0 z-[1000] w-full font-montserrat bg-background-secondary py-2 flex items-center">
   </Header>
   <NuxtPage />
   <Footer />
@@ -16,8 +16,8 @@ let observed: HTMLElement | null = null
 
 // Keep --header-height in sync with the real fixed header height so hero
 // content and scroll-padding always clear it (the mobile header is taller
-// than the old static 60px/120px values). Self-healing: the header root is
-// swapped by v-if at the 850px breakpoint, so always re-read the live element.
+// than the old static values). Self-healing: the header root is
+// swapped by v-if at the 1100px breakpoint, so always re-read the live element.
 const syncHeaderHeight = () => {
   const el = headerRef.value?.$el
   if (!el || !el.isConnected) return

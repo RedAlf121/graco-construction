@@ -1,7 +1,7 @@
 <template>
   <NuxtLink
     :to="$props.path"
-    class="uppercase font-extrabold tracking-wide text-[16px] px-8 py-4
+    class="inline-flex items-center justify-center uppercase font-extrabold tracking-wide text-[clamp(0.8125rem,1.5vmin,1rem)] px-[clamp(1.625rem,4vmin,2.125rem)] py-[clamp(0.8125rem,1.8vmin,1.0625rem)]
               text-black border-2
               transition-transform duration-200 ease-in-out
               hover:-translate-y-[6px]"
