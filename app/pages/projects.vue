@@ -1,5 +1,5 @@
 <template>
-  <main class="mt-24 bg-gradient-to-l from-background-secondary to-background-primary min-h-screen">
+  <main class="bg-gradient-to-l from-background-secondary to-background-primary min-h-screen">
     <NuxtPage />
   </main>
 </template>

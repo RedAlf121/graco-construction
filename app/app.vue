@@ -1,15 +1,20 @@
 <template>
   <Header
     ref="headerRef"
-    class="fixed top-0 z-[1000] w-full font-montserrat bg-background-secondary py-2 flex items-center">
+    :class="[
+      'z-[1000] w-full font-montserrat bg-background-secondary py-2 flex items-center',
+      isHome ? 'fixed top-0' : 'sticky top-0',
+    ]">
   </Header>
   <NuxtPage />
   <Footer />
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted, nextTick } from 'vue'
+import { computed, ref, onMounted, onUnmounted, nextTick } from 'vue'
 
+const route = useRoute()
+const isHome = computed(() => route.path === '/')
 const headerRef = ref<{ $el: HTMLElement } | null>(null)
 let observer: ResizeObserver | null = null
 let observed: HTMLElement | null = null

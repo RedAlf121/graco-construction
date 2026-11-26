@@ -4,6 +4,7 @@
     :nav-links="navLinks"
     :is-menu-open="isMobileMenuOpen"
     @toggle-menu="toggleMobileMenu"
+    @close-menu="closeMobileMenu"
   />
   <HeaderDesktop
     v-else
@@ -38,6 +39,10 @@ const checkMobile = () => {
 
 const toggleMobileMenu = () => {
   isMobileMenuOpen.value = !isMobileMenuOpen.value
+}
+
+const closeMobileMenu = () => {
+  isMobileMenuOpen.value = false
 }
 
 onMounted(() => {

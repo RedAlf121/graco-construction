@@ -11,10 +11,17 @@
 
     <MobileHamburgerButton :is-menu-open="isMenuOpen" @toggle="$emit('toggle-menu')" />
 
-    <MobileMenuOverlay v-if="isMenuOpen" @close="$emit('toggle-menu')" />
+    <Transition
+      enter-active-class="transition-opacity duration-fast ease-cubic"
+      enter-from-class="opacity-0"
+      leave-active-class="transition-opacity duration-base ease-cubic"
+      leave-to-class="opacity-0"
+    >
+      <MobileMenuOverlay v-if="isMenuOpen" @close="$emit('close-menu')" />
+    </Transition>
 
     <MobileMenuDrawer :is-open="isMenuOpen">
-      <MobileNavContent :nav-links="navLinks" />
+      <MobileNavContent :nav-links="navLinks" @navigate="$emit('close-menu')" />
     </MobileMenuDrawer>
   </header>
 </template>
@@ -31,5 +38,5 @@ defineProps({
   isMenuOpen: Boolean
 })
 
-defineEmits(['toggle-menu'])
+defineEmits(['toggle-menu', 'close-menu'])
 </script>
