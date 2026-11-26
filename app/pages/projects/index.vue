@@ -11,7 +11,7 @@
           v-for="(card, index) in residentialCards"
           :key="card.slug"
           :to="card.to"
-          class="group relative block overflow-hidden rounded-none bg-background-tertiary transition-all duration-300 hover:-translate-y-1 hover:shadow-card-3d-hover shadow-card-3d w-[calc(50%-8px)] md:w-[calc(33.333%-10.667px)]"
+          class="group relative block overflow-hidden rounded-none bg-background-tertiary transition-all duration-300 hover:-translate-y-1 hover:shadow-card-3d-hover shadow-card-3d w-full sm:w-[calc(50%-8px)] md:w-[calc(33.333%-10.667px)]"
           :class="`animate-fadeInUp [animation-delay:${(index + 1) * 100}ms]`"
         >
           <div class="aspect-video overflow-hidden">
@@ -35,7 +35,7 @@
       </div>
 
       <h3 class="text-2xl font-bold text-white/80 mb-3">Commercial</h3>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
+      <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 md:grid-cols-3">
         <NuxtLink
           v-for="(card, index) in commercialCards"
           :key="card.slug"
