@@ -51,11 +51,13 @@ const props = defineProps({
   link: Object
 })
 
+const emit = defineEmits(['navigate'])
+
 const route = useRoute()
 
 const isActive = computed(() => route.path === props.link.path)
 
 const handleClick = () => {
-  // Mobile menu will close via the overlay/close mechanism
+  emit('navigate')
 }
 </script>

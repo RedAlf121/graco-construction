@@ -1,5 +1,5 @@
 <template>
-  <main class="mt-24 min-h-screen bg-gradient-to-l from-background-secondary to-background-primary">
+  <main class="min-h-screen bg-gradient-to-l from-background-secondary to-background-primary">
   <section class="px-4 py-12 md:py-16 lg:py-20">
     <div class="mx-auto max-w-7xl">
       <div v-if="service">

@@ -1,5 +1,5 @@
 <template>
-  <main class="mt-24 bg-gradient-to-l from-background-secondary to-background-primary">
+  <main class="bg-gradient-to-l from-background-secondary to-background-primary">
     <AboutUs />
   </main>
 </template>
